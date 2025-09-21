@@ -1,0 +1,85 @@
+ body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f9;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    }
+    h2, h3 { color: #2c3e50; }
+    input, button, select {
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 100%;
+    }
+    button {
+      background: #3498db;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover { background: #2980b9; }
+    .hidden { display: none; }
+    .task {
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: #f9f9f9;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .completed { text-decoration: line-through; color: gray; }
+    .progress-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px 0;
+      background: #f8faff;
+    }
+    .progress-bar {
+      height: 20px;
+      background: #eee;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+    .progress {
+      height: 100%;
+      background: #27ae60;
+      border-radius: 10px;
+      width: 0%;
+      transition: width 0.3s;
+    }
+    .badge {
+      display: inline-block;
+      padding: 5px 10px;
+      margin: 5px;
+      background: gold;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    nav {
+      margin: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav button { width: auto; margin: 0 5px; }
+    #passwordHint { font-size: 14px; color: #888; }

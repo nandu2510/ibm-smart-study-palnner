@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <header>
+    <h1>Smart Study Planner</h1>
+  </header>
+
+  <!-- Authentication Section -->
+  <div class="container" id="auth">
+    <h2>Login / Register</h2>
+    <input type="text" id="username" placeholder="Enter Username">  <link rel="stylesheet" href="style.css">
+    
+    <input type="password" id="password" placeholder="Enter Password">
+    <p id="passwordHint"></p>
+    <button onclick="register()">Register</button>
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- Dashboard Section -->
+  <div class="container hidden" id="dashboard">
+    <nav>
+      <h2>Welcome, <span id="userDisplay"></span></h2>
+      <button onclick="logout()">Logout</button>
+    </nav>
+
+    <!-- Task Input -->
+    <h3>Add Task</h3>
+    <input type="text" id="taskInput" placeholder="Task name">
+    <select id="courseSelect">
+      <option>Math</option>
+      <option>Science</option>
+      <option>History</option>
+      <option>Programming</option>
+    </select>
+    <input type="date" id="deadline">
+    <button onclick="addTask()">Add Task</button>
+
+    <!-- Task List -->
+    <h3>Your Tasks</h3>
+    <div id="taskList"></div>
+
+    <!-- Dashboard Progress -->
+    <h3>Dashboard Progress</h3>
+    <div class="progress-card">
+      <div class="progress-bar"><div class="progress" id="progress"></div></div>
+      <p id="stats"></p>
+      <p id="tips"></p>
+    </div>
+
+    <!-- Reminders -->
+    <h3>Reminders</h3>
+    <button onclick="setReminder()">Set Reminder</button>
+    <p id="reminderMsg"></p>
+
+    <!-- Badges -->
+    <h3>Badges</h3>
+    <div id="badges"></div>
+
+    <!-- Profile -->
+    <h3>Profile</h3>
+    <p>Username: <span id="profileName"></span></p>
+    <p>Courses Tracked: <span id="profileCourses"></span></p>
+  </div>
+  <script src="script.js"></script>
+  </body>
+</html>
